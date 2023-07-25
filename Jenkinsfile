@@ -6,7 +6,7 @@ node('workers'){
     }
     
     
-        def imageTest= docker.build("${imageName}-test", "-f Dockerfile.test .")
+        // def imageTest= docker.build("${imageName}-test", "-f Dockerfile.test .")
 
     stage('Tests'){
         parallel(
