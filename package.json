@@ -5,7 +5,11 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint .",
+    "coverage-text": "nyc --reporter=text mocha",
+    "coverage-html": "nyc --reporter=html mocha"
+    
   },
   "author": "Oluyege P.A",
   "license": "MIT",
@@ -13,6 +17,10 @@
     "axios": "^0.18.0",
     "cors": "^2.8.4",
     "dotenv": "^16.3.1",
-    "express": "^4.16.3"
+    "express": "^4.16.3",
+    "chai": "^4.2.0",
+    "eslint": "^6.8.0",
+    "mocha": "^7.1.1",
+    "nyc": "^15.0.1"
   }
 }
