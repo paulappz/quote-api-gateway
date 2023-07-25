@@ -43,6 +43,6 @@ app.get('*', (req, res) => {
 });
 
 // starts the app
-app.listen(3000, () => {
+app.listen(7000, () => {
     console.log('API Gateway is listening on port 3000!')
 })
