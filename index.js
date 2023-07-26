@@ -19,7 +19,7 @@ app.get('/api/status', (req, res) => {
 app.get('/api/randomquote', async (req, res) => {
     try {
         //const url = QUOTES_API_GATEWAY + '/api/quote'
-        const url = 'http://aaa8a0fdfb06f43759f15d5761af2c0b-1279095845.eu-west-2.elb.amazonaws.com/api/quote'
+        const url = 'http://afedb7a71832f44fcbe9f7deb17bf299-1840045078.eu-west-2.elb.amazonaws.com/api/quote'
 
         const quote = await axios.get(url)
         return res.json({
